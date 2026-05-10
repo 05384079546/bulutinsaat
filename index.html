@@ -1,69 +1,117 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulut İnşaat | Ebru Çiçek</title>
+    <title>Bulut İnşaat | Ebru Çiçek - İstanbul Genelinde Güvenilir Yapılar</title>
     <style>
-        body { font-family: 'Arial', sans-serif; margin: 0; padding: 0; color: #333; }
-        header { background-color: #003366; color: white; padding: 20px; text-align: center; border-bottom: 5px solid #ffcc00; }
-        nav { background: #f8f9fa; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav a { margin: 0 20px; text-decoration: none; color: #003366; font-weight: bold; text-transform: uppercase; }
-        .hero { background-color: #003366; color: white; padding: 100px 20px; text-align: center; }
-        .container { max-width: 1200px; margin: auto; padding: 40px 20px; }
-        .section-title { border-left: 5px solid #003366; padding-left: 15px; margin-bottom: 30px; color: #003366; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
-        .card { border: 1px solid #ddd; padding: 20px; border-radius: 5px; transition: 0.3s; }
-        footer { background: #222; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+        :root { --ana-renk: #001f3f; --altin: #d4af37; --gri: #f9f9f9; --koyu-gri: #333; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: var(--koyu-gri); }
+        header { background: var(--ana-renk); color: white; padding: 50px 20px; text-align: center; border-bottom: 5px solid var(--altin); }
+        .logo-title { font-size: 38px; font-weight: 800; letter-spacing: 4px; margin: 0; }
+        .logo-sub { font-size: 16px; letter-spacing: 6px; color: var(--altin); text-transform: uppercase; margin-top: 10px; }
+        nav { background: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        nav a { margin: 0 20px; text-decoration: none; color: var(--ana-renk); font-weight: bold; font-size: 14px; transition: 0.3s; }
+        nav a:hover { color: var(--altin); }
+        .hero { background: #001f3f; color: white; padding: 80px 20px; text-align: center; }
+        .section { padding: 80px 20px; max-width: 1200px; margin: auto; }
+        .bg-light { background: var(--gri); }
+        h2 { text-align: center; color: var(--ana-renk); font-size: 28px; margin-bottom: 50px; text-transform: uppercase; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-left: 5px solid var(--altin); }
+        .malzeme-listesi { list-style: none; padding: 0; }
+        .malzeme-listesi li { padding: 10px 0; border-bottom: 1px dotted #ccc; }
+        .malzeme-listesi li::before { content: "◈ "; color: var(--altin); font-weight: bold; }
+        .foto-placeholder { background: #eee; height: 250px; border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #888; font-style: italic; border: 1px solid #ddd; }
+        footer { background: #0a0a0a; color: white; text-align: center; padding: 50px; }
+        .iletisim-detay { display: inline-block; text-align: left; background: rgba(255,255,255,0.05); padding: 30px; border-radius: 10px; border: 1px solid var(--altin); }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="font-size: 28px; font-weight: bold;">BULUT İNŞAAT</div>
-    <div style="font-size: 16px; letter-spacing: 2px;">EBRU ÇİÇEK</div>
+    <p class="logo-title">BULUT İNŞAAT</p>
+    <p class="logo-sub">Ebru Çiçek</p>
 </header>
 
 <nav>
-    <a href="#anasayfa">Ana Sayfa</a>
-    <a href="#kurumsal">Kurumsal</a>
-    <a href="#projeler">Projelerimiz</a>
-    <a href="#iletisim">İletişim</a>
+    <a href="#anasayfa">ANA SAYFA</a>
+    <a href="#vizyon">BÖLGELERİMİZ</a>
+    <a href="#uretim">ÜRETİM VE KALİTE</a>
+    <a href="#projeler">SAHA ÇALIŞMALARI</a>
+    <a href="#iletisim">İLETİŞİM</a>
 </nav>
 
 <div class="hero" id="anasayfa">
-    <h1>Geleceği Güvenle İnşa Ediyoruz</h1>
-    <p>Bulut İnşaat ile Modern ve Sağlam Yapılar</p>
+    <h1>İstanbul'un Her İki Yakasında Güven İnşa Ediyoruz</h1>
+    <p style="font-size: 1.2rem; max-width: 800px; margin: 20px auto;">Anadolu ve Avrupa yakasındaki seçkin bölgelerde, kentsel dönüşüm ve modern yapı projeleriyle değer katıyoruz.</p>
 </div>
 
-<div class="container" id="kurumsal">
-    <h2 class="section-title">Hakkımızda</h2>
-    <p>Bulut İnşaat, <strong>Ebru Çiçek</strong> liderliğinde İstanbul'un yükselen değerleri Bahçelievler, Bağcılar ve Esenyurt bölgelerinde faaliyet göstermektedir. Deprem yönetmeliğine uygun, modern mimariyi odağına alan projelerimizle arsa sahiplerine profesyonel ve güvenilir iş ortaklığı sunuyoruz.</p>
-</div>
-
-<div class="container" id="projeler" style="background: #f9f9f9;">
-    <h2 class="section-title">Projelerimiz</h2>
+<div class="section" id="vizyon">
+    <h2>Faaliyet Bölgelerimiz</h2>
     <div class="grid">
         <div class="card">
-            <h3>Esenyurt Projelerimiz</h3>
-            <p><strong>Çift daire üzeri</strong> inşaat modelimizle, metrekare kaybını önleyen, ferah ve modern yaşam alanları.</p>
+            <h3>Avrupa Yakası</h3>
+            <p>Bahçelievler, Bağcılar, Esenyurt, Beylikdüzü ve Yenibosna başta olmak üzere, kentsel dönüşüm potansiyeli yüksek bölgelerde modern projeler geliştiriyoruz.</p>
         </div>
         <div class="card">
-            <h3>Kentsel Dönüşüm</h3>
-            <p>Eski yapılarınızı, en kaliteli malzemelerle (C35 beton, kaliteli işçilik) depreme dayanıklı yeni yuvalara dönüştürüyoruz.</p>
-        </div>
-        <div class="card">
-            <h3>Gelecek Vizyonumuz</h3>
-            <p>Bahçelievler ve Bağcılar hatlarında 50 daire kapasitesine kadar olan yeni proje sahaları geliştiriyoruz.</p>
+            <h3>Anadolu Yakası</h3>
+            <p>Kadıköy, Maltepe ve Üsküdar hattında, bölgenin mimari dokusuna uygun, lüks ve sağlam yapı projelerimizle faaliyetlerimizi sürdürüyoruz.</p>
         </div>
     </div>
 </div>
 
-<div class="container" id="iletisim">
-    <h2 class="section-title">İletişim</h2>
-    <p><strong>Adres:</strong> İstanbul (Bahçelievler / Esenyurt Bölgeleri)</p>
-    <p><strong>Telefon:</strong> [Telefon Numaranızı Buraya Yazınız]</p>
-    <p><strong>E-posta:</strong> info@bulutinsaat.com</p>
+<div class="section bg-light" id="uretim">
+    <h2>Üretim Disiplini ve Malzeme Kalitesi</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Teknik Standartlar</h3>
+            <ul class="malzeme-listesi">
+                <li><strong>C35/40 Sınıf Beton:</strong> Deprem güvenliği için en yüksek standart.</li>
+                <li><strong>Radye Temel Sistemi:</strong> Tüm projelerimizde zemin güvenliği önceliğimizdir.</li>
+                <li><strong>Sıkı Şantiye Denetimi:</strong> Ebru Çiçek bizzat her aşamayı yerinde takip eder.</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Kullanılan Malzemeler</h3>
+            <ul class="malzeme-listesi">
+                <li>TSE ve ISO Belgeli Nervürlü Demir Donatısı</li>
+                <li>Yüksek Isı ve Ses Yalıtımlı Dış Cephe Sistemleri</li>
+                <li>Birinci Sınıf Seramik ve Vitrifiye Grupları</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="section" id="projeler">
+    <h2>İş Aşamalarımız</h2>
+    <div class="grid">
+        <div class="card">
+            <div class="foto-placeholder">Buraya Temel Atma Fotoğrafı Gelecek</div>
+            <h3>Temel ve Altyapı</h3>
+            <p>Statik projesine %100 sadık kalarak, İstanbul zeminine en uygun temel çözümlerini uyguluyoruz.</p>
+        </div>
+        <div class="card">
+            <div class="foto-placeholder">Buraya Kaba İnşaat Fotoğrafı Gelecek</div>
+            <h3>Kaba Yapı ve İşçilik</h3>
+            <p>Kalıp ve demir işçiliğinde sıfır hata toleransı ile çalışıyor, binaların iskeletini ömürlük kuruyoruz.</p>
+        </div>
+        <div class="card">
+            <div class="foto-placeholder">Buraya Bitmiş Proje Fotoğrafı Gelecek</div>
+            <h3>İnce İşçilik ve Teslim</h3>
+            <p>Modern mutfaklar, ferah banyolar ve şık dış cephe tasarımlarıyla anahtar teslim süreçler.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section bg-light" id="iletisim" style="text-align: center;">
+    <h2>Bize Ulaşın</h2>
+    <div class="iletisim-detay">
+        <p><strong>Firma Sahibi:</strong> Ebru Çiçek</p>
+        <p><strong>Telefon:</strong> [Telefon Numaranızı Yazın]</p>
+        <p><strong>E-Posta:</strong> info@bulutinsaat.com</p>
+        <p><strong>Ofis:</strong> İstanbul (Anadolu & Avrupa Yakası Proje Ofisleri)</p>
+    </div>
 </div>
 
 <footer>
