@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulut İnşaat | Ebru Çiçek - İstanbul Genelinde Güvenilir Yapılar</title>
+    <title>Bulut İnşaat | Ebru Çiçek - Teknik Şartname ve Kalite Standartları</title>
     <style>
-        :root { --ana-renk: #001f3f; --altin: #d4af37; --gri: #f9f9f9; --koyu-gri: #333; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; line-height: 1.6; color: var(--koyu-gri); }
-        header { background: var(--ana-renk); color: white; padding: 50px 20px; text-align: center; border-bottom: 5px solid var(--altin); }
-        .logo-title { font-size: 38px; font-weight: 800; letter-spacing: 4px; margin: 0; }
-        .logo-sub { font-size: 16px; letter-spacing: 6px; color: var(--altin); text-transform: uppercase; margin-top: 10px; }
-        nav { background: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        nav a { margin: 0 20px; text-decoration: none; color: var(--ana-renk); font-weight: bold; font-size: 14px; transition: 0.3s; }
-        nav a:hover { color: var(--altin); }
-        .hero { background: #001f3f; color: white; padding: 80px 20px; text-align: center; }
-        .section { padding: 80px 20px; max-width: 1200px; margin: auto; }
-        .bg-light { background: var(--gri); }
-        h2 { text-align: center; color: var(--ana-renk); font-size: 28px; margin-bottom: 50px; text-transform: uppercase; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; }
-        .card { background: white; padding: 30px; border-radius: 4px; box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-left: 5px solid var(--altin); }
-        .malzeme-listesi { list-style: none; padding: 0; }
-        .malzeme-listesi li { padding: 10px 0; border-bottom: 1px dotted #ccc; }
-        .malzeme-listesi li::before { content: "◈ "; color: var(--altin); font-weight: bold; }
-        .foto-placeholder { background: #eee; height: 250px; border-radius: 4px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; color: #888; font-style: italic; border: 1px solid #ddd; }
-        footer { background: #0a0a0a; color: white; text-align: center; padding: 50px; }
-        .iletisim-detay { display: inline-block; text-align: left; background: rgba(255,255,255,0.05); padding: 30px; border-radius: 10px; border: 1px solid var(--altin); }
+        :root { --ana-renk: #001f3f; --altin: #d4af37; --gri: #f4f4f4; --beyaz: #ffffff; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; background-color: var(--beyaz); }
+        header { background: var(--ana-renk); color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--altin); }
+        .logo-title { font-size: clamp(24px, 5vw, 40px); font-weight: 800; letter-spacing: 3px; margin: 0; }
+        .logo-sub { font-size: 14px; letter-spacing: 5px; color: var(--altin); text-transform: uppercase; }
+        nav { background: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav a { margin: 0 10px; text-decoration: none; color: var(--ana-renk); font-weight: bold; font-size: 13px; }
+        .section { padding: 50px 20px; max-width: 1200px; margin: auto; }
+        h2 { text-align: center; color: var(--ana-renk); border-bottom: 2px solid var(--altin); display: inline-block; padding-bottom: 10px; margin-bottom: 40px; width: 100%; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border: 1px solid #eee; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+        .card img { width: 100%; height: 200px; object-fit: cover; background: #eee; }
+        .card-body { padding: 15px; }
+        .card-body h3 { margin: 0 0 10px 0; font-size: 18px; color: var(--ana-renk); }
+        .card-body p { margin: 0; font-size: 14px; color: #666; }
+        .badge { background: var(--altin); color: var(--ana-renk); padding: 3px 8px; border-radius: 4px; font-size: 11px; font-weight: bold; float: right; }
+        footer { background: #111; color: white; text-align: center; padding: 30px; margin-top: 50px; }
+        .iletisim-box { background: var(--ana-renk); color: white; padding: 30px; border-radius: 10px; text-align: center; margin-top: 30px; }
     </style>
 </head>
 <body>
@@ -35,82 +33,81 @@
 </header>
 
 <nav>
-    <a href="#anasayfa">ANA SAYFA</a>
-    <a href="#vizyon">BÖLGELERİMİZ</a>
-    <a href="#uretim">ÜRETİM VE KALİTE</a>
-    <a href="#projeler">SAHA ÇALIŞMALARI</a>
+    <a href="#kaba">YAPI STANDARTLARI</a>
+    <a href="#ince">İÇ MİMARİ & DONANIM</a>
+    <a href="#dis">DIŞ CEPHE & ORTAK ALAN</a>
     <a href="#iletisim">İLETİŞİM</a>
 </nav>
 
-<div class="hero" id="anasayfa">
-    <h1>İstanbul'un Her İki Yakasında Güven İnşa Ediyoruz</h1>
-    <p style="font-size: 1.2rem; max-width: 800px; margin: 20px auto;">Anadolu ve Avrupa yakasındaki seçkin bölgelerde, kentsel dönüşüm ve modern yapı projeleriyle değer katıyoruz.</p>
-</div>
-
-<div class="section" id="vizyon">
-    <h2>Faaliyet Bölgelerimiz</h2>
+<div class="section" id="kaba">
+    <h2>Teknik Yapı Standartları</h2>
     <div class="grid">
         <div class="card">
-            <h3>Avrupa Yakası</h3>
-            <p>Bahçelievler, Bağcılar, Esenyurt, Beylikdüzü ve Yenibosna başta olmak üzere, kentsel dönüşüm potansiyeli yüksek bölgelerde modern projeler geliştiriyoruz.</p>
+            <img src="temel.jpg" alt="Radye Temel">
+            <div class="card-body"><h3>Radye Temel & C35 Beton</h3><p>Tüm projelerimizde deprem yönetmeliğine uygun yüksek dayanımlı beton ve temel sistemleri kullanılır.</p></div>
         </div>
         <div class="card">
-            <h3>Anadolu Yakası</h3>
-            <p>Kadıköy, Maltepe ve Üsküdar hattında, bölgenin mimari dokusuna uygun, lüks ve sağlam yapı projelerimizle faaliyetlerimizi sürdürüyoruz.</p>
+            <img src="demir.jpg" alt="Demir İşçiliği">
+            <div class="card-body"><h3>Nervürlü Demir Donatısı</h3><p>TSE belgeli, statik projeye tam uyumlu demir işçiliği ile sarsılmaz yapılar.</p></div>
         </div>
     </div>
 </div>
 
-<div class="section bg-light" id="uretim">
-    <h2>Üretim Disiplini ve Malzeme Kalitesi</h2>
+<div class="section" id="ince" style="background: #fdfdfd;">
+    <h2>Lüks İç Mekan Detayları</h2>
     <div class="grid">
         <div class="card">
-            <h3>Teknik Standartlar</h3>
-            <ul class="malzeme-listesi">
-                <li><strong>C35/40 Sınıf Beton:</strong> Deprem güvenliği için en yüksek standart.</li>
-                <li><strong>Radye Temel Sistemi:</strong> Tüm projelerimizde zemin güvenliği önceliğimizdir.</li>
-                <li><strong>Sıkı Şantiye Denetimi:</strong> Ebru Çiçek bizzat her aşamayı yerinde takip eder.</li>
-            </ul>
+            <img src="mutfak.jpg" alt="Mutfak">
+            <div class="card-body"><span class="badge">1. Sınıf</span><h3>Mutfak & Ankastre</h3><p>Özel tasarım mutfak dolapları, kuvars tezgah ve 3'lü ankastre set (ocak, fırın, davlumbaz).</p></div>
         </div>
         <div class="card">
-            <h3>Kullanılan Malzemeler</h3>
-            <ul class="malzeme-listesi">
-                <li>TSE ve ISO Belgeli Nervürlü Demir Donatısı</li>
-                <li>Yüksek Isı ve Ses Yalıtımlı Dış Cephe Sistemleri</li>
-                <li>Birinci Sınıf Seramik ve Vitrifiye Grupları</li>
-            </ul>
+            <img src="banyo.jpg" alt="Banyo">
+            <div class="card-body"><span class="badge">TSE</span><h3>Banyo & Vitrifiye</h3><p>Temperli cam duşakabin, lüks banyo dolapları ve modern lavabo üniteleri.</p></div>
+        </div>
+        <div class="card">
+            <img src="parke.jpg" alt="Parke">
+            <div class="card-body"><h3>Parke & Seramik</h3><p>Daire içi odalarda 1. sınıf derzli laminat parke, ıslak zeminlerde 60x120 granit seramik uygulamaları.</p></div>
+        </div>
+        <div class="card">
+            <img src="kapi.jpg" alt="İç Kapı">
+            <div class="card-body"><h3>Daire İçi Kapılar</h3><p>Modern tasarımlı, yüksek kaliteli lake veya ahşap görünümlü iç kapılar.</p></div>
+        </div>
+        <div class="card">
+            <img src="kombi.jpg" alt="Isınma">
+            <div class="card-body"><h3>Isınma & Tesisat</h3><p>Yoğuşmalı kombi sistemi ve yeni nesil dekoratif panel radyatörler.</p></div>
+        </div>
+        <div class="card">
+            <img src="elektrik.jpg" alt="Elektrik">
+            <div class="card-body"><h3>Elektrik & Akıllı Sistem</h3><p>Şık tasarımlı prizler, kameralı diyafon sistemi ve fiber internet altyapısı.</p>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="section" id="projeler">
-    <h2>İş Aşamalarımız</h2>
+<div class="section" id="dis">
+    <h2>Bina Dış Cephe ve Ortak Alanlar</h2>
     <div class="grid">
         <div class="card">
-            <div class="foto-placeholder">Buraya Temel Atma Fotoğrafı Gelecek</div>
-            <h3>Temel ve Altyapı</h3>
-            <p>Statik projesine %100 sadık kalarak, İstanbul zeminine en uygun temel çözümlerini uyguluyoruz.</p>
+            <img src="dis-cephe.jpg" alt="Dış Cephe">
+            <div class="card-body"><h3>Dış Cephe Giydirme</h3><p>Isı yalıtımlı (mantolama) ve estetik kompozit/jontalı dış cephe tasarımları.</p></div>
         </div>
         <div class="card">
-            <div class="foto-placeholder">Buraya Kaba İnşaat Fotoğrafı Gelecek</div>
-            <h3>Kaba Yapı ve İşçilik</h3>
-            <p>Kalıp ve demir işçiliğinde sıfır hata toleransı ile çalışıyor, binaların iskeletini ömürlük kuruyoruz.</p>
+            <img src="asansor.jpg" alt="Asansör">
+            <div class="card-body"><h3>Lüks Asansör</h3><p>Tam otomatik, hızlı ve güvenli, modern kabin tasarımlı asansör sistemleri.</p></div>
         </div>
         <div class="card">
-            <div class="foto-placeholder">Buraya Bitmiş Proje Fotoğrafı Gelecek</div>
-            <h3>İnce İşçilik ve Teslim</h3>
-            <p>Modern mutfaklar, ferah banyolar ve şık dış cephe tasarımlarıyla anahtar teslim süreçler.</p>
+            <img src="celik-kapi.jpg" alt="Çelik Kapı">
+            <div class="card-body"><h3>Bina & Daire Girişi</h3><p>Yüksek güvenlikli çelik kapılar ve mermer kaplama bina girişi/merdivenler.</p></div>
         </div>
     </div>
 </div>
 
-<div class="section bg-light" id="iletisim" style="text-align: center;">
-    <h2>Bize Ulaşın</h2>
-    <div class="iletisim-detay">
-        <p><strong>Firma Sahibi:</strong> Ebru Çiçek</p>
-        <p><strong>Telefon:</strong> [05384079546]</p>
-        <p><strong>E-Posta:</strong>emel689191@gmail.com</p>
-        <p><strong>Ofis:</strong> İstanbul Avrupa Yakası & Anadolu Yakası Projeleri</p>
+<div class="section" id="iletisim">
+    <div class="iletisim-box">
+        <h2>Bulut İnşaat İletişim</h2>
+        <p><strong>Ebru Çiçek</strong></p>
+        <p>Telefon: [05384079546]</p>
+        <p>İstanbul Geneli Kentsel Dönüşüm ve Proje Çözümleri</p>
     </div>
 </div>
 
