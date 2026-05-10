@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bulut İnşaat | Ebru Çiçek - İstanbul Profesyonel Yapı Çözümleri</title>
+    <title>Bulut İnşaat | Ebru Çiçek</title>
     <style>
-        :root { --ana-renk: #001f3f; --altin: #d4af37; --gri: #f4f4f4; --beyaz: #ffffff; }
+        :root { --ana-renk: #001f3f; --altin: #d4af37; --gri: #f4f4f4; }
         body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; line-height: 1.6; color: #333; }
         header { background: var(--ana-renk); color: white; padding: 40px 20px; text-align: center; border-bottom: 5px solid var(--altin); }
         .logo-title { font-size: 35px; font-weight: 800; letter-spacing: 3px; margin: 0; }
@@ -13,14 +13,13 @@
         nav { background: white; padding: 15px; text-align: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
         nav a { margin: 0 10px; text-decoration: none; color: var(--ana-renk); font-weight: bold; font-size: 12px; }
         .section { padding: 40px 20px; max-width: 1200px; margin: auto; }
-        h2 { text-align: center; color: var(--ana-renk); border-bottom: 2px solid var(--altin); padding-bottom: 10px; margin-bottom: 30px; }
+        h2 { text-align: center; color: var(--ana-renk); border-bottom: 2px solid var(--altin); padding-bottom: 10px; margin-bottom: 30px; text-transform: uppercase; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
         .card { background: white; border: 1px solid #eee; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
-        .card img { width: 100%; height: 220px; object-fit: cover; background: #ddd; }
+        .card img { width: 100%; height: 230px; object-fit: cover; background: #ddd; }
         .card-body { padding: 15px; }
         .card-body h3 { margin: 0 0 10px 0; font-size: 18px; color: var(--ana-renk); }
-        .card-body p { margin: 0; font-size: 14px; color: #666; }
-        .iletisim-box { background: var(--ana-renk); color: white; padding: 30px; border-radius: 10px; text-align: center; margin-top: 30px; }
+        .iletisim-box { background: var(--ana-renk); color: white; padding: 40px; border-radius: 10px; text-align: center; margin-top: 30px; }
         footer { background: #111; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
 </head>
@@ -32,9 +31,9 @@
 </header>
 
 <nav>
-    <a href="#saha">SAHA ÇALIŞMALARI</a>
-    <a href="#ic-mekan">İÇ TASARIM & DONANIM</a>
-    <a href="#teknik">DIŞ CEPHE & TEKNİK</a>
+    <a href="#saha">SAHA SÜREÇLERİ</a>
+    <a href="#ic-mekan">İÇ TASARIM</a>
+    <a href="#teknik">TEKNİK DETAYLAR</a>
     <a href="#iletisim">İLETİŞİM</a>
 </nav>
 
@@ -43,79 +42,46 @@
     <div class="grid">
         <div class="card">
             <img src="612e0bf9-7333-4b43-8fe1-76a3c66c8b2b.jpg" alt="Temel">
-            <div class="card-body">
-                <h3>Temel ve Altyapı</h3>
-                <p>Radye temel ve C35 beton kullanımı ile sarsılmaz bir başlangıç.</p>
-            </div>
+            <div class="card-body"><h3>Temel ve Altyapı</h3><p>Radye temel ve C35 beton uygulamaları.</p></div>
         </div>
         <div class="card">
             <img src="8292c868-f453-45f7-ba10-8dd4f15c6cba.jpg" alt="Kaba İnşaat">
-            <div class="card-body">
-                <h3>Kaba İnşaat Süreci</h3>
-                <p>Hatasız demir işçiliği ve yüksek mukavemetli taşıyıcı sistemler.</p>
-            </div>
+            <div class="card-body"><h3>Kaba İnşaat</h3><p>Hatasız demir işçiliği ve statik projeye tam uyum.</p></div>
         </div>
         <div class="card">
-            <img src="9f233584-70b3-4f64-bee8-d927e66aabe0.jpg" alt="Bitmiş Bina">
-            <div class="card-body">
-                <h3>Bitmiş Projelerimiz</h3>
-                <p>Estetik ve güveni birleştiren, anahtar teslim modern yapılar.</p>
-            </div>
+            <img src="9f233584-70b3-4f64-bee8-d927e66aabe0.jpg" alt="Bitmiş Proje">
+            <div class="card-body"><h3>Teslim Edilen Projeler</h3><p>Modern mimari ve güvenli yaşam alanları.</p></div>
         </div>
     </div>
 </div>
 
 <div class="section" id="ic-mekan" style="background: #f9f9f9;">
-    <h2>İç Mimari ve Lüks Donanım</h2>
+    <h2>Lüks İç Tasarım ve Donanım</h2>
     <div class="grid">
-        <div class="card">
-            <img src="mutfak.jpg" alt="Mutfak">
-            <div class="card-body"><h3>Mutfak & Ankastre</h3><p>Özel tasarım dolaplar ve 3'lü ankastre set.</p></div>
-        </div>
-        <div class="card">
-            <img src="banyo.jpg" alt="Banyo">
-            <div class="card-body"><h3>Lüks Banyo & Vitrifiye</h3><p>Temperli cam duşakabin ve modern lavabo üniteleri.</p></div>
-        </div>
-        <div class="card">
-            <img src="kapi.jpg" alt="Kapılar">
-            <div class="card-body"><h3>Daire İçi & Çelik Kapı</h3><p>Yüksek güvenlikli çelik kapı ve modern iç kapılar.</p></div>
-        </div>
-        <div class="card">
-            <img src="parke.jpg" alt="Zemin">
-            <div class="card-body"><h3>Seramik & Parke</h3><p>1. sınıf derzli parke ve 60x120 granit seramikler.</p></div>
-        </div>
+        <div class="card"><div style="height:230px; background:#eee; display:flex; align-items:center; justify-content:center; color:#999;">Görsel Eklenecek</div><div class="card-body"><h3>Mutfak ve Ankastre</h3><p>Özel tasarım dolaplar ve 3'lü ankastre set.</p></div></div>
+        <div class="card"><div style="height:230px; background:#eee; display:flex; align-items:center; justify-content:center; color:#999;">Görsel Eklenecek</div><div class="card-body"><h3>Banyo ve Vitrifiye</h3><p>Lüks banyo mobilyaları ve modern armatürler.</p></div></div>
+        <div class="card"><div style="height:230px; background:#eee; display:flex; align-items:center; justify-content:center; color:#999;">Görsel Eklenecek</div><div class="card-body"><h3>Zemin ve Parke</h3><p>1. Sınıf derzli parke ve granit seramikler.</p></div></div>
     </div>
 </div>
 
 <div class="section" id="teknik">
-    <h2>Dış Cephe ve Bina Detayları</h2>
+    <h2>Bina Teknik Şartnamesi</h2>
     <div class="grid">
-        <div class="card">
-            <img src="dis-cephe.jpg" alt="Dış Cephe">
-            <div class="card-body"><h3>Dış Cephe Giydirme</h3><p>Isı yalıtımlı estetik mantolama ve kompozit detaylar.</p></div>
-        </div>
-        <div class="card">
-            <img src="asansor.jpg" alt="Asansör">
-            <div class="card-body"><h3>Modern Asansör</h3><p>Tam otomatik, güvenli ve şık kabin tasarımları.</p></div>
-        </div>
-        <div class="card">
-            <img src="diyafon.jpg" alt="Teknoloji">
-            <div class="card-body"><h3>Güvenlik & Diyafon</h3><p>Kameralı diyafon ve akıllı elektrik/internet altyapısı.</p></div>
-        </div>
+        <div class="card"><div style="height:230px; background:#eee; display:flex; align-items:center; justify-content:center; color:#999;">Görsel Eklenecek</div><div class="card-body"><h3>Asansör Sistemi</h3><p>Tam otomatik, sessiz ve konforlu kabinler.</p></div></div>
+        <div class="card"><div style="height:230px; background:#eee; display:flex; align-items:center; justify-content:center; color:#999;">Görsel Eklenecek</div><div class="card-body"><h3>Yalıtım ve Dış Cephe</h3><p>Isı ve ses yalıtımlı modern dış cephe sistemleri.</p></div></div>
+        <div class="card"><div style="height:230px; background:#eee; display:flex; align-items:center; justify-content:center; color:#999;">Görsel Eklenecek</div><div class="card-body"><h3>Teknoloji ve Güvenlik</h3><p>Kameralı diyafon ve akıllı altyapı sistemleri.</p></div></div>
     </div>
 </div>
 
 <div class="section" id="iletisim">
     <div class="iletisim-box">
         <h2>Bulut İnşaat İletişim</h2>
-        <p><strong>Ebru Çiçek</strong></p>
-        <p>Telefon: 05384079546</p> <p>İstanbul Geneli Profesyonel İnşaat Çözümleri</p>
+        <p style="font-size: 20px;"><strong>Ebru Çiçek</strong></p>
+        <p>Telefon: [05384079546]</p>
+        <p>İstanbul (Anadolu ve Avrupa Yakası Projelerimizle Hizmetinizdeyiz)</p>
     </div>
 </div>
 
-<footer>
-    <p>&copy; 2023 Bulut İnşaat - Ebru Çiçek. Tüm Hakları Saklıdır.</p>
-</footer>
-
+<footer><p>&copy; 2026 Bulut İnşaat - Ebru Çiçek. Tüm Hakları Saklıdır.</p></footer>
 </body>
 </html>
